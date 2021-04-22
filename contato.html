@@ -4,30 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato de onde eu vim</title>
+    <title>Contato</title>
 </head>
 <body>
-
     <ul id="menu">
 
-    <li>
-        <a href="index.html">Home</a>
-    </li>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+    
+        <li>
+            <a href="contato.html">Contato de onde eu vim</a>
+        </li>
+    
+        </ul>
 
-    <li>
-        <a href="contato.html">Contato de onde eu vim</a>
-    </li>
+    <h1>Contato de onde eu vim.</h1>
 
-    </ul>
+    <form>
+        <label for="nome">Nome:</label> <br>
+        <input type="text" id="nome" onkeyup="validaNome()">
+        <div id="txtNome"></div>
+        <br>
+        <br>
+        <label for="email">E-mail:</label> <br>
+        <input type="email" id="email" onkeyup='validaEmail()'>
+        <div id="txtEmail"></div>
+        <br>
+        <br>
+        <label for="assunto">Assunto:</label>  <br>
+        <textarea name="assuno" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+        <div id='txtAssunto'></div>
+        <br>
+        <br>
+        <button>Enviar</button>
+    </form>
 
-    <h1 class="center">Contato de onde eu vim</h1>
-
-    <h2>Endereço</h2>
-
+    <h2>Endereço:</h2>
     <p>Vila Santa Luzia, São Bernardo do Campo</p>
-    <p> São Paulo - Sp</p>
+    <p>São Paulo - Sp</p>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58459.28442520891!2d-46.64854693383719!3d-23.686495522801042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce44bbe73be3b5%3A0xf79df68c45ec65cf!2sPresente%20De%20Deus!5e0!3m2!1spt-BR!2sbr!4v1618849909171!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58468.291171650104!2d-46.60744!3d-23.666365!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf79df68c45ec65cf!2sPresente%20De%20Deus!5e0!3m2!1spt-BR!2sbr!4v1619024237974!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" tabindex="0" onmousemove="mapaZoom()" onmouseout="mapaNormal()"
+    loading="lazy"></iframe>    
+    
+    <hr>
+
+    <footer>
+
+        <div class="container">
+           
+            <a href="https://www.facebook.com/" target="_blank"> 
+                <img classs="tm-social p-30" src="assets/img/facebook.png" alt="Logo do facebook">
+            </a>
+
+            <a href="https://www.linkedin.com/in/larissa-silva-alves-858a14138/" target="_blank">
+                <img classs="tm-social p-30" src="assets/img/linkedin.png" alt="Logo do linkedin">
+            </a>
+
+            <a href="https://www.instagram.com/?hl=pt-br" target="_blank">
+                <img classs="tm-social p-30"src="assets/img/instagram.png" alt="Logo do instagram">
+            </a>
+        </div>
+
+        <p class="center">
+                Todos os direitos reservados: Larissa Alves &copy
+       </p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
 
 </body>
 </html>
